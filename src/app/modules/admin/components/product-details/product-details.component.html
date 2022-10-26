@@ -1,0 +1,152 @@
+<!-- <p class="product-detail">product-details works!</p>
+
+<h3><a  routerLink="../../products">back to products page</a></h3>
+<h3><a  routerLink="../../cart">check out cart</a></h3> -->
+
+<app-header></app-header>
+
+
+<div  *ngFor="let item of  singleProductData" class="details-wrap">
+  <div class="left-img-section">
+    <!-- <button (click)="previousImg()"><i class='fas fa-angle-left' style='font-size:25px'></i> </button> -->
+    <div  class="image-container">
+      <img [src]="imgArray[imgSrc]" alt="">
+    </div>
+
+    <!-- <button (click)=" nextImg()" ><i class='fas fa-angle-right' style='font-size:25px'></i> </button> -->
+
+    <div class="img-navigation">
+      <button (click)="previousImg()"><i class='fas fa-angle-left' style='font-size:25px'></i> </button>
+      <button (click)=" nextImg()" ><i class='fas fa-angle-right' style='font-size:25px'></i> </button>
+    </div>
+  </div>
+
+  <div class="right-product-desc">
+    <div class="product-desc-section">
+      <div class="item-name">
+        <h2 class="brand-name">{{item.brand}}</h2>
+        <h3 class="product-name">{{item.title}}</h3>
+      </div>
+   
+      <h1 class="price">${{item.price}}</h1>
+      <p class="discount"> {{item.discountPercentage}} % off</p>
+      <h2 class="desc">{{item.description}}</h2>
+
+      <ul class="other-info">
+        <li>Bank Offer5% Cashback on Flipkart Axis Bank Card <span>T&C</span></li>
+        <li>Bank OfferAdditional ₹1000 Off on IDFC FIRST First Bank Credit Card EMI Trxns on product worth ₹30,000 and aboveT&C <span>T&C</span></li>
+        <li> <span>T&C</span></li>
+        <li>Partner OfferSign up for Flipkart Pay Later and get Flipkart Gift Card worth upto ₹500*Know More <span>T&C</span></li>
+      </ul>
+
+      <div class="btn-wrap">
+        <button (click)="addtocart(item)"  class="add-cart"><span>Add to cart</span></button>
+        <button routerLink="../../products"  class="back"><span>Products page</span></button>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+<!-- <div class="product-detail-wrap">
+  <main>
+    <div *ngFor="let item of  singleProductData"  class="card">
+      <div class="card__title">
+        <div class="icon">
+          <a href="#"><i class="fa fa-arrow-left"></i></a>
+        </div>
+        <h3>{{item.brand}}</h3>
+      </div>
+      <div class="card__body">
+        <div class="half">
+          <div class="featured_text">
+            <h1>{{item.title}}}</h1>
+            <p class="sub">Office Chair</p>
+            <p class="price">${{item.price}}</p>
+
+          </div>
+          <div  class="image">
+            <img src={{item.thumbnail}} alt="">
+            <img [src]="imgArray[imgSrc]" alt="">
+
+  
+         
+          </div>
+
+          <div class="img-navigation">
+            <button (click)="previousImg()"><i class='fas fa-angle-left' style='font-size:30px'></i> </button>
+            <button (click)=" nextImg()" ><i class='fas fa-angle-right' style='font-size:30px'></i> </button>
+          </div>
+
+        </div>
+        <div class="half">
+          <div class="description">
+            <p>{{item.description}}</p>
+            <p class="price item-price">${{item.price}}</p>
+            <p> DIscount:{{item.discountPercentage}}%</p>
+          </div>
+          <span class="stock"><i class="fa fa-pen"></i> In stock</span>
+          <div class="reviews">
+            <ul class="stars">
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star-o"></i></li>
+            </ul>
+            <span>{{item.rating}}</span>
+   
+          </div>
+
+
+
+        </div>
+      </div>
+      <div class="card__footer">
+        <div class="recommend">
+          <p>Recommended by</p>
+          <h3>Andrew Palmer</h3>
+        </div>
+        <div class="action">
+          <button (click)="addtocart(item)" type="button">Add to cart</button>
+          <button  routerLink="../../products" class="back-btn" type="button">Back to products pg</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</div> -->
+
+
+
+
+<!-- <div class="product-details-wrap">
+    <div class="image-section">
+        <h1>img section</h1>
+        <div class="img-area">
+            <img src="" alt="">
+        </div>
+    </div>
+    <div class="item-desc">
+        <h1>discription section</h1>
+    </div>
+</div> -->
+
+
+
+<!-- <div class="random">
+
+
+    <div  *ngFor="let item of  singleProductData">
+        <div>
+            <li>{{item.brand}}</li>
+            
+            <button (click)="addtocart(item)">Add to cart</button>
+        </div>
+        
+    
+      
+    </div>
+
+</div> -->

@@ -1,0 +1,685 @@
+// @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat:300,400,700,800|Open+Sans:300');
+
+// body {
+//   background-image: linear-gradient(
+//     to right bottom,
+//     #b91eda,
+//     #a02ae0,
+//     #8234e5,
+//     #5d3be8,
+//     #1241eb
+//   );
+//   height: 100%;
+//   margin: 0;
+//   background-repeat: no-repeat;
+//   background-attachment: fixed;
+// }
+
+// main{
+// //   max-width: 720px;
+//   width: 850px;
+//   margin: 5% auto;
+// }
+
+// .card{
+//   box-shadow: 0 6px 6px rgba(#000, 0.3);
+//   transition: 200ms;
+//   background: #fff;
+  
+//   .card__title{
+//     display: flex;
+//     align-items: center;
+//     padding: 30px 40px;
+    
+//     h3{
+//       flex: 0 1 200px;
+//       text-align: right;
+//       margin: 0;
+//       color: #252525;
+//       font-family: sans-serif;
+//       font-weight: 600;
+//       font-size: 20px;
+//       text-transform: uppercase;
+//     }
+    
+//     .icon{
+//       flex: 1 0 10px;
+//       background: #115dd8;
+//       color: #fff;
+//       padding: 10px 10px;
+//       transition: 200ms;
+      
+//       > a{
+//         color: #fff;
+//       }
+      
+//       &:hover{
+//         background: #252525;
+//       }
+//     }
+//   }
+  
+//   .card__body{
+//     padding: 0 40px;
+//     display: flex;
+//     flex-flow: row no-wrap;
+//     margin-bottom: 25px;
+    
+//     > .half{
+//       box-sizing: border-box;
+//       padding: 0 15px;
+//       flex: 1 0 50%;
+//     }
+    
+//     .featured_text{
+//       h1{
+//         margin: 0;
+//         padding: 0;
+//         font-weight: 800;
+//         font-family: "Montserrat", sans-serif;
+//         font-size: 64px;
+//         line-height: 50px;
+//         color: #181e28;
+//       }
+      
+//       p{
+//         margin: 0;
+//         padding: 0;
+        
+//         &.sub{
+//           font-family: "Montserrat", sans-serif;
+//           font-size: 26px;
+//           text-transform: uppercase;
+//           color: #686e77;
+//           font-weight: 300;
+//           margin-bottom: 5px;
+//         }
+        
+//         &.price{
+//             margin-top: 20px;
+//           font-family: "Fjalla One", sans-serif;
+//           color: #252525;
+//           font-size: 26px;
+//         }
+//       }
+//     }
+    
+//     .image{
+//       padding-top: 15px;
+//       width: 100%;
+      
+//       img{
+//         display: block;
+//         max-width: 100%;
+//         height: auto;
+//       }
+//     }
+    
+//     .description{
+//       margin-bottom: 25px;
+      
+//       p{
+//         margin: 0;
+//         font-family: "Open Sans", sans-serif;
+//         font-weight: 300;
+//         line-height: 27px;
+//         font-size: 16px;
+//         color: #555;
+//       }
+//     }
+    
+//     span.stock{
+//       font-family: "Montserrat", sans-serif;
+//       font-weight: 600;
+//       color: #a1cc16;
+//     }
+    
+//     .reviews{
+//       .stars{
+//         display: inline-block;
+//         list-style: none;
+//         padding: 0;
+        
+//         > li{
+//           display: inline-block;
+          
+//           .fa{
+//             color: #f7c01b;
+//           }
+//         }
+//       }
+      
+//       > span{
+//         font-family: "Open Sans", sans-serif;
+//         font-size: 14px;
+//         margin-left: 5px;
+//         color: #555;
+//       }
+//     }
+//   }
+  
+//   .card__footer{
+//     padding: 30px 40px;
+//     display: flex;
+//     flex-flow: row no-wrap;
+//     align-items: center;
+//     position: relative;
+    
+//     &::before{
+//       content: "";
+//       position: absolute;
+//       display: block;
+//       top: 0;
+//       left: 40px;
+//       width: calc(100% - 40px);
+//       height: 3px;
+//       background: #115dd8;
+//       background: linear-gradient(to right, #115dd8 0%,#115dd8 20%,#ddd 20%,#ddd 100%);
+//     }
+    
+//     .recommend{
+//       flex: 1 0 10px;
+      
+//       p{
+//         margin: 0;
+//         font-family: "Montserrat", sans-serif;
+//         text-transform: uppercase;
+//         font-weight: 600;
+//         font-size: 14px;
+//         color: #555;
+//       }
+     
+//       h3{
+//         margin: 0;
+//         font-size: 20px;
+//         font-family: "Montserrat", sans-serif;
+//         font-weight: 600;
+//         text-transform: uppercase;
+//         color: #115dd8;
+//       }
+//     }
+    
+//     .action{
+
+//         .back-btn{
+//             margin-left: 20px;
+//             cursor: pointer;
+//             border: 1px solid #58657b;
+//             padding: 14px 30px;
+//             border-radius: 200px;
+//             color: #fff;
+//             background:#58657b; 
+//             font-family: "Open Sans", sans-serif;
+//             font-size: 16px;
+//             transition: 200ms;
+//             &:hover{
+//                 background: grey;
+//                 color:white;
+//               }
+//         }
+
+//       button{
+//         cursor: pointer;
+//         border: 1px solid #115dd8;
+//         padding: 14px 30px;
+//         border-radius: 200px;
+//         color: #fff;
+//         background: #115dd8;
+//         font-family: "Open Sans", sans-serif;
+//         font-size: 16px;
+//         transition: 200ms;
+        
+//         &:hover{
+//           background: #fff;
+//           color: #115dd8;
+//         }
+
+    
+//       }
+//     }
+//   }
+// }
+
+@import '/src/assets/sass/functions.scss';
+
+.product-details-wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 1%;
+
+    .image-section{
+        width: 35%;
+        background-color: red;
+    }
+
+    .item-desc{
+        width: calc(100% - 22%);
+        background-color: green;
+    }
+
+
+  
+
+    
+
+}
+  // css for product detail template
+
+  .product-detail-wrap{
+    @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat:300,400,700,800|Open+Sans:300');
+
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    #b91eda,
+    #a02ae0,
+    #8234e5,
+    #5d3be8,
+    #1241eb
+  );
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main{
+//   max-width: 720px;
+  width: rem(850);
+  margin: 5% auto;
+
+  .product-detail-wrap.card.item-price{
+    color: #000;
+    font-weight: 600;
+    font-size: rem(26);
+  }
+}
+
+.card{
+  box-shadow: 0 6px 6px rgba(#000, 0.3);
+  transition: 200ms;
+  background: #fff;
+
+
+  .img-navigation{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    button{
+
+        border: none;
+        color: #686e77;
+
+        &:last-child{
+            margin-left: rem(20);
+        }
+    }
+  }
+
+  
+  
+  .card__title{
+    display: flex;
+    align-items: center;
+    padding: rem(30) rem(40);
+    
+    h3{
+      flex: 0 1 rem(200);
+      text-align: right;
+      margin: 0;
+      color: #252525;
+      font-family: sans-serif;
+      font-weight: 600;
+      font-size: rem(20);
+      text-transform: uppercase;
+    }
+    
+    .icon{
+      flex: 1 0 rem(10);
+      background: #115dd8;
+      color: #fff;
+      padding:rem(10) rem(20);
+      transition: 200ms;
+      
+      > a{
+        color: #fff;
+      }
+      
+      &:hover{
+        background: #252525;
+      }
+    }
+  }
+  
+  .card__body{
+    padding: 0 rem(40);
+    display: flex;
+    flex-flow: row no-wrap;
+    margin-bottom:rem(25);
+    
+    > .half{
+      box-sizing: border-box;
+      padding: 0 rem(15);
+      flex: 1 0 50%;
+    }
+    
+    .featured_text{
+      h1{
+        margin: 0;
+        padding: 0;
+        font-weight: 800;
+        font-family: "Montserrat", sans-serif;
+        font-size: rem(64);
+        line-height: rem(50);
+        color: #181e28;
+      }
+      
+      p{
+        margin: 0;
+        padding: 0;
+        
+        &.sub{
+          font-family: "Montserrat", sans-serif;
+          font-size: rem(26);
+          text-transform: uppercase;
+          color: #686e77;
+          font-weight: 300;
+          margin-bottom: rem(5);
+        }
+        
+        // &.price{
+        //     margin-top:rem(20);
+        //   font-family: "Fjalla One", sans-serif;
+        //   color: #252525;
+        
+        //   font-size:rem(26);
+        // }
+      }
+    }
+    
+    .image{
+      padding:rem(15);
+      width: 100%;
+      height: rem(350);
+      
+      img{
+        display: block;
+        max-width: 100%;
+        // height: auto;
+        height: 100%;
+      }
+    }
+    
+    .description{
+      margin-bottom: rem(25);
+      
+      p{
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        line-height: rem(27);
+        font-size: rem(16);
+        color: #555;
+      }
+    }
+    
+    span.stock{
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      color: #a1cc16;
+    }
+    
+    .reviews{
+      .stars{
+        display: inline-block;
+        list-style: none;
+        padding: 0;
+        
+        > li{
+          display: inline-block;
+          
+          .fa{
+            color: #f7c01b;
+          }
+        }
+      }
+      
+      > span{
+        font-family: "Open Sans", sans-serif;
+        font-size: rem(14);
+        margin-left: rem(5);
+        color: #555;
+      }
+    }
+  }
+  
+  .card__footer{
+    padding: 30px 40px;
+    display: flex;
+    flex-flow: row no-wrap;
+    align-items: center;
+    position: relative;
+    
+    &::before{
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: rem(40);
+      width: calc(100% - rem(40));
+      height: 3px;
+      background: #115dd8;
+      background: linear-gradient(to right, #115dd8 0%,#115dd8 20%,#ddd 20%,#ddd 100%);
+    }
+    
+    .recommend{
+      flex: rem(1) 0 rem(10)
+      
+      p{
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        color: #555;
+      }
+     
+      h3{
+        margin: 0;
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #115dd8;
+      }
+    }
+    
+    .action{
+
+        .back-btn{
+            margin-left: 20px;
+            cursor: pointer;
+            border: 1px solid #58657b;
+            padding: 14px 30px;
+            border-radius: 200px;
+            color: #fff;
+            background:#58657b; 
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            transition: 200ms;
+            &:hover{
+                background: grey;
+                color:white;
+              }
+        }
+
+      button{
+        cursor: pointer;
+        border: 1px solid #115dd8;
+        padding: rem(14) rem(30);
+        border-radius: rem(200);
+        color: #fff;
+        background: #115dd8;
+        font-family: "Open Sans", sans-serif;
+        font-size: rem(16);
+        transition: 200ms;
+        
+        &:hover{
+          background: #fff;
+          color: #115dd8;
+        }
+
+    
+      }
+    }
+  }
+}
+
+  }
+
+
+
+  .details-wrap{
+
+    display: flex;
+    justify-content: space-between;
+   
+    .left-img-section{
+        width: 30%;
+        // background-color: #115dd8;
+        // background-color: white
+        padding: rem(20);
+
+        .image-container{
+          
+            width: 100%;
+            height: rem(600);
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .img-navigation{
+            margin-top: rem(20);
+            display: flex;
+            width: 100%;
+            justify-content: center;
+
+            button{
+               
+                border: none;
+                border-radius: rem(6);
+
+                &:last-child{
+                   margin-left: rem(20);
+                }
+            }
+        }
+    }
+
+    .right-product-desc{
+        width: 70%;
+        // background-color: pink;
+        
+        padding: rem(20);
+
+        .product-desc-section{
+        
+            padding: rem(40);
+
+            .item-name{
+                display: flex;
+            }
+             
+            .brand-name{
+                color: black;
+                font-size: rem(30);
+                // font-weight: 600;
+                margin-bottom: rem(20);
+            }
+           
+            .product-name{
+                color: black;
+                font-size: rem(30);
+                font-weight: 600;
+                margin-bottom: rem(20);
+                margin-left: rem(20);
+            }
+            .price{
+                font-weight: 500;
+                margin-bottom: rem(10);
+            }
+            .discount{
+                color: rgb(20,190,71);
+                margin-bottom: rem(20);
+            }
+
+            .other-info{
+
+                list-style: none;
+                margin-left: rem(15);
+                font-size: rem(20);
+                margin-top: rem(10);
+                font-weight: 300;
+                li{
+                    margin-top: rem(10);
+
+                    span{
+                        color:rgb(40,116,240);
+                        font-weight: normal;
+                    }
+                }
+                
+                li::before {
+                    content: "\2022";
+                    color: rgb(158, 120, 120);
+                    font-weight: bold;
+                    display: inline-block; 
+                    width: 1em;
+                    margin-left: -1em;
+                  }
+
+            }
+
+            .btn-wrap{
+
+                margin-top: rem(30);
+                button{
+
+                    height: rem(50);
+                    border: none;
+                    border-radius: rem(6);
+
+                    span{
+                        color: white;
+                        font-size: rem(26);
+                        padding: rem(10);
+                    }
+                    }
+
+                .add-cart{
+                   background-color: orange;
+                   height: rem(50);
+
+                   &:hover{
+                    background-color: orangered;
+                   }
+
+                }
+
+                .back{
+                   background-color: grey;
+                   margin-left: rem(20);
+                   &:hover{
+                    background-color: #58657b;
+                   }
+                }
+            }
+        }
+
+    }
+  }

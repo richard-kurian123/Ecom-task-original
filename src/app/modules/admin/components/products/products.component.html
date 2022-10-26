@@ -1,0 +1,104 @@
+<!-- <p>products works!</p>
+
+<h1>products</h1> -->
+
+
+<!-- <div  *ngFor="let item of productsArray">
+    <li>{{item.title}}</li>
+
+ 
+</div> -->
+<app-header></app-header>
+
+
+<div class="products-pg">
+
+    <div class="categories">
+       
+    <!-- <input type="radio" value="all"  [(ngModel)]="itemCategorty" (change)="filterProducts()" >
+    <span>display all products</span>
+    <input type="radio" value="smartphones" [(ngModel)]="itemCategorty" (change)="filterProducts()">
+    <span>Smart Phones</span>
+    <input type="radio" value="laptops" [(ngModel)]="itemCategorty">
+    <span>laptops</span> -->
+
+        <!-- <input (click)="filterProducts($event)" [(ngModel)]="categorty" value="laptops">/> -->
+        <!-- <a (click)="filterProducts($event)" [(ngModel)]="categorty" value="smartphones">smart Phones</a> -->
+
+<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+    <div class="selection-group">
+        <input  [(ngModel)]="itemCategorty" value="all"   type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+        <label class="btn btn-outline-primary" for="btnradio1"> All products</label>
+
+    </div>
+    <div class="selection-group">
+
+        <input [(ngModel)]="itemCategorty" value="smartphones" type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio2">Smart Phones</label>
+    </div>
+    <div class="selection-group">
+        <input [(ngModel)]="itemCategorty" value="laptops"  type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio3">laptops</label>
+    </div>
+
+    <div class="selection-group">
+        <input [(ngModel)]="itemCategorty" value="fragrances"  type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio4">Fragrances</label>
+    </div>
+    <div class="selection-group">
+        <input [(ngModel)]="itemCategorty" value= "skincare"  type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio5">Skincare</label>
+    </div>
+
+
+
+ 
+
+
+</div>
+
+    </div>
+
+    <div class="card-conatiner">
+
+<ng-container  *ngFor="let item of productsArray">
+    <div  *ngIf="itemCategorty === 'all' || itemCategorty === item.category " >
+            
+        <div class="card">
+            <!-- <span class="seller">#1 Bestseller</span> -->
+           <div class="image">
+               <img src={{item.thumbnail}} width="170">
+           </div>
+
+       <div class="details-section">
+        
+        <div class="details">
+            <h2>{{item.title}}</h2>
+            <span>Ships in 3-4 days</span>
+        </div>
+        <div class="pricing">
+            <h3>${{item.price}}</h3>
+        </div>
+            <div class="buttons">
+            <button [routerLink]="['../details',item.id]">view Product</button>
+            <button>Buy</button>
+        </div> 
+
+       </div>
+
+        
+        </div>
+    
+        
+      
+    </div>
+</ng-container>
+     
+        
+        </div>
+
+</div>
+
+
+
+

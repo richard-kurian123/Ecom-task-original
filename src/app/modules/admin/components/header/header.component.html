@@ -1,0 +1,26 @@
+<div class="header-wrap">
+    <div class="header">
+        <ul class="nav">
+            <li class="nav-item">
+              <a  routerLink="/admin" class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a  routerLink="/admin" class="nav-link" href="#">My Account</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="/admin/products" class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <i routerLink="/admin/cart" class='fas fa-cart-arrow-down' style='font-size:20px'></i>
+                <p *ngIf="count > 0" class="cart-count">{{count}}</p>
+              </li>
+           <!-- <li><a>{{totalItem}}</a></li> -->
+            <!-- <li class="nav-item"> 
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li> -->
+          </ul>
+    </div>
+    <div class="logout-btn-wrap">
+        <button (click)="isLoggedOut()" class="logou">Logout</button>
+    </div>
+</div>

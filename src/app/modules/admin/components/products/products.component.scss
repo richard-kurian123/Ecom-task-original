@@ -1,0 +1,215 @@
+*{
+    // margin:0;
+    // padding:0;
+    // background-color: rgb(247,247,247);
+
+}
+
+// body{
+//     background-color:#6213ea;
+//     height:100vh;
+//     display:flex;
+//     justify-content:center;
+//     align-items:center;
+//     background-color: rgb(247,247,247);
+// }
+
+
+
+// .card-conatiner{
+
+//     margin-top: 100px;
+
+//     display: flex;
+//     gap: rem(30);
+//     flex-direction: row;
+ 
+
+
+
+//     .seller{
+//         width:150px;
+//         height:50px;
+//         background-color:#8c14e7;
+//         padding:5px;
+//         border-radius:4px;
+//         color:#fff;
+//         font-size:14px;
+        
+//     }
+    
+//     .card{
+//         width:350px;
+//         height:400px;
+//         background-color:#fff;
+//         border-radius:5px;
+//         padding:20px;
+//         position:relative;
+//     }
+    
+//     .details {
+//         margin-top:20px;
+//     }
+    
+//     .card .image{
+//         display:flex;
+//         justify-content:center;
+//         margin-top:40px;
+//     }
+    
+//     .pricing{
+//         margin-top:10px;
+//         font-size:20px;
+//     }
+    
+    
+//     .buttons{
+//         display:flex;
+//         // margin-top:50px;
+//     }
+    
+    
+//     .buttons button:nth-child(1){
+//         width:100%;
+//         height:40px;
+//         margin-right:10px;
+//         border:none;
+//         background-color:#fff;
+//         border:2px solid blue;
+//         border-radius:4px;
+//         color:blue;
+//         cursor:pointer;
+//         transition:all 0.5s;
+//     }
+    
+//     .buttons button:hover:nth-child(1){
+//         background-color:blue;
+//         color:#fff;
+//     }
+    
+//     .buttons button:nth-child(2){
+//         width:100%;
+//         height:40px;
+//         border:none;
+//         background-color:blue;
+//         color:#fff;
+//         border-radius:4px;
+//         cursor:pointer;
+//     }
+
+// }
+
+
+
+
+@import '/src/assets/sass/functions.scss';
+
+
+.categories{
+    display: flex;
+    margin-top: rem(10);
+    justify-content: center;
+
+    .selection-group{
+        margin-left: rem(20);
+        margin-right: rem(20);
+        // &:nth-child(2){
+        //     margin-left: rem(20);
+        //     margin-right: rem(20);
+        // }
+    }
+}
+.card-conatiner{
+
+    padding-top:rem(50);
+    padding-bottom: rem(50);
+    justify-content: center;
+
+    display: flex;
+    gap: rem(30);
+    flex-direction: row;
+    background-color: rgb(247,247,247);
+ 
+
+
+
+    .seller{
+        width:150px;
+        height:50px;
+        background-color:#8c14e7;
+        padding:5px;
+        border-radius:4px;
+        color:#fff;
+        font-size:14px;
+        
+    }
+    
+    .card{
+        width:350px;
+        height:400px;
+        background-color:#fff;
+        border-radius:5px;
+        padding:20px;
+        position:relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    
+    .details {
+        margin-top:20px;
+    }
+    
+    .card .image{
+        display:flex;
+        justify-content:center;
+        margin-top:40px;
+
+        img{
+          object-fit: contain;
+          max-height: rem(200);
+        }
+    }
+    
+    .pricing{
+        margin-top:10px;
+        font-size:20px;
+    }
+    
+    
+    .buttons{
+        display:flex;
+        // margin-top:50px;
+    }
+    
+    
+    .buttons button:nth-child(1){
+        width:100%;
+        height:40px;
+        margin-right:10px;
+        border:none;
+        background-color:#fff;
+        border:2px solid blue;
+        border-radius:4px;
+        color:blue;
+        cursor:pointer;
+        transition:all 0.5s;
+    }
+    
+    .buttons button:hover:nth-child(1){
+        background-color:blue;
+        color:#fff;
+    }
+    
+    .buttons button:nth-child(2){
+        width:100%;
+        height:40px;
+        border:none;
+        background-color:blue;
+        color:#fff;
+        border-radius:4px;
+        cursor:pointer;
+    }
+
+}

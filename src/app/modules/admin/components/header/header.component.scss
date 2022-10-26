@@ -1,0 +1,71 @@
+@import '/src/assets/sass/functions.scss';
+.fa-cart-arrow-down{
+cursor: pointer;
+}
+
+
+
+
+.header-wrap{
+    background: radial-gradient(circle, rgba(42,98,156,0.8715861344537815) 0%, rgba(104,111,163,1) 100%);;
+    width: 100vw;
+    height: rem(100);
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+    .header{
+       
+        ul{
+            li{
+                a{
+                    color: white;
+                    line-height: rem(20);
+                    font-size: rem(25);
+                    letter-spacing:rem(.1);
+                    font-weight: 500;
+                }
+
+                .fa-cart-arrow-down{
+                  
+                    color: white;
+                    padding-top: rem(5);
+                    
+                    
+                }
+
+                &:last-child{
+                    margin-left: rem(50);
+                    position: relative;
+                    .cart-count{
+                        position: absolute;
+                        color: white;
+                        right: rem(-25);
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .logout-btn-wrap{
+
+        margin-right: 5%;
+
+        button{
+           
+
+            border-radius: rem(6);
+            font-size: rem(20);
+            background-color:rgb(56, 7, 233);
+            color: white;
+            padding: rem(10);
+            border: none;
+
+            &:hover{
+                background-color: orangered;
+            }
+
+        }
+       
+    }
+}

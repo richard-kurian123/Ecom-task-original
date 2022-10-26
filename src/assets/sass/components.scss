@@ -1,0 +1,12 @@
+.card-conatiner{
+
+    display: flex;
+    gap: rem(30);
+    flex-direction: row;
+    background-color: red($color: #b53636);
+    width: 100%;
+    flex-wrap: wrap;
+
+   
+
+}

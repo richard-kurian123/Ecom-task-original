@@ -1,0 +1,53 @@
+<!-- <button (click)="isloggedIn()">login</button> -->
+
+<!-- <a routerLink="/admin"> click to navigate to admin</a>
+<h1>this is a test project</h1> -->
+
+<!-- just for viewing the component in progress without naigating -->
+<!-- <app-test-comp></app-test-comp> -->
+
+<h3>email abc@gmail.com</h3>
+<h4>pass: 123</h4>
+<h5>Check users.json for more users</h5>
+
+
+<div class="login-wrap">
+  <div class="container vh-100">
+    <div class="row justify-content-center h-100">
+      <div class="card my-auto shadow">
+        <div class="card-body px-5">
+          <div class="text-center">
+            <!-- <fa-icon  class="fa-3x"></fa-icon> -->
+          </div> 
+          <div class="text-center">
+            <h2 class="welcome-heading">Welcome</h2>
+          </div>
+          <p style="color: lightslategray; text-align: center;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please enter your login
+            details&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+          <form [formGroup]="loginForm" (ngSubmit)="isloggedIn()">
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Email" class="form-control" formControlName="email"
+                name="email" />
+                <!-- <small *ngIf="loginForm.get('email')?.touched" style="color: red;">Email is required </small> -->
+                <small *ngIf="loginForm.get('email')?.touched && (loginForm.get('email')?.invalid)" style="color: red;">Email is invalid</small>
+            </div>
+            <div class="form-group">
+              <input type="password" id="password" placeholder="Password" class="form-control"
+                formControlName="password" name="password" />
+                <small *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid" style="color: red; font-size: medium;">Password is required</small>
+            </div>
+            <input [disabled]="!loginForm.valid" type="submit" class="btn btn-primary w-100" value="Login" name="">
+          </form>
+
+
+        </div>
+        <div class="card-footer text-right">
+          <small><a routerLink="/signup">SignUp</a></small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

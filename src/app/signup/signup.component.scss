@@ -1,0 +1,26 @@
+@import '/src/assets/sass/functions.scss';
+
+
+
+.signup-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .signUp-form{
+        margin-top: 10%;
+        width: 50%;
+        padding: rem(100);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        border-radius: rem(6);
+
+        .form-group{
+            margin-bottom: rem(10);
+        }
+        
+        button{
+            margin-top:rem(20);
+            margin-bottom: rem(20);
+        }
+    }
+}
